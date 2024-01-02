@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoloo Website - Mahalakshmi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/007322ccf4.js" crossorigin="anonymous"></script>
+
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+               <h2>Mahalakshmi</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <h2>Hi, I'm <span>Mahalakshmi Selvam</span></h2>
+                <p>MERN Stack Developer</p>
+                <a href="/Images/Maha-CV.pdf" download class="cvbtn">Download CV</a>
+
+            </div>
+        </div>
+    </div>
+    <!-- End of header -->
+
+    <!-- About -->
+<div id="about">
+    <div class="container">
+        <center><h1>About Me</h1></center>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./Images/certification.jpg" alt="certification"  class="icon">
+                <h3>Certification</h3>
+                <p>GUVI</br>MERN Stack Development</p>
+            </div>
+            <div class="about-col-2">
+                <img src="./Images/education.png" alt="Education" class="icon">
+                <h3>Education</h3>
+                <p>Master of Computer Application</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="aboutme">
+          Dedicated and passionate Full stack developer with solid foundation in web
+          development backed by the successful completion of rigorous 6-month Full stack
+          development program at GUVI. Eager to leverage this comprehensive training to
+          contribute to innovative projects and drive technological advancements in the
+          field.
+        </p>
+      </div>
+</div>
+<!-- End of About -->
+
+<!-- Skills -->
+<div id="skills">
+    <div class="container">
+        <center><h1>Skills</h1></center>
+        <div class="skills-detail">
+            <center><h2 class="fontend-dev">Frontend</h2></center>
+            <div class="front-end-skills">
+                <div>
+                <img src="./Images/checkmark.jpg" alt="checkmark" class="icon">
+                    <h3>Javascript</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div>
+                <img src="./Images/checkmark.jpg" alt="checkmark" class="icon">
+                    <h3>React</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div>
+                <img src="./Images/checkmark.jpg" alt="checkmark" class="icon">
+                    <h3>HTML5/CSS3</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div>
+                <img src="./Images/checkmark.jpg" alt="checkmark" class="icon">
+                    <h3>Bootstrap</h3>
+                    <p>Intermediate</p>
+                </div>
+            </div>
+            <center><h2 class="fontend-dev">Backend</h2></center>
+            <div class="back-end-skills">
+                
+                <div>
+                    <img src="./Images/checkmark.jpg" alt="checkmark" class="icon">
+                    <h3>Node JS</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div>
+                <img src="./Images/checkmark.jpg" alt="checkmark" class="icon">
+                    <h3>MongoDB</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div>
+                <img src="./Images/checkmark.jpg" alt="checkmark" class="icon">
+                    <h3>Express JS</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div>
+                <img src="./Images/checkmark.jpg" alt="checkmark" class="icon">
+                    <h3>MySQL</h3>
+                    <p>Basic</p>
+                </div>
+        </div>
+    </div>
+</div>
+<!-- End of Skills -->
+
+<!-- Projects -->
+<div id="project">
+    <div class="container">
+        <center><h1>Projects</h1></center>
+        <div class="project-container">
+            <div class="project-detail">
+            <div class="dice">
+            <img src="./Images/Dice.png" alt="Dice Image" class="project-img">
+            <h2>Dice Game</h2>
+            <div>
+                <Button class="btn" onclick="location.href='https://github.com/MahalakshmiS97/Dice-Game'">Github</Button>
+                <button class="btn" onclick="location.href='https://64fd655becfe836a3a586a4d--guileless-taiyaki-7e44ce.netlify.app/'">Live</button>
+            </div>
+        </div>
+        <div class="dice">
+            <img src="./Images/authendication.webp" alt="Authendication" class="project-img">
+            <h2>Authentication</h2>
+            <div>
+                <Button class="btn" onclick="location.href='https://github.com/MahalakshmiS97/Password'"'>Github</Button>
+                <button class="btn" onclick="location.href='https://6575b7c960878824140f0f99--neon-moonbeam-324558.netlify.app/'">Live</button>
+            </div>
+        </div>
+        <div class="dice">
+            <img src="./Images/diet.jpg" alt="Diet Suggestion" class="project-img">
+            <h2>Diet Suggestion App</h2>
+            <div>
+                <Button class="btn" onclick="location.href='https://github.com/MahalakshmiS97/Diet_Suggestion'">Github</Button>
+                <button class="btn" onclick="location.href='https://6585857de2582cc61fe19d95--merry-blini-cfe0aa.netlify.app/'">Live</button>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- End of Projects -->
+
+<!-- Contact -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>&nbsp;mahalakshmivarma97@gmail.com</p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/mahalakshmi-selvam-748666294/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/MahalakshmiS97"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Em   ail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="submitbtn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwgf0tefoJAFNsgTel7IWJQ4XmMrEWBwObB_HOh1R04twQjT5B9veqHiGhzWVTXjzc/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</html>

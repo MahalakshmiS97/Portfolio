@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans:wght@400;700&family=Peralta&family=Poppins:wght@400;700&family=Qwigley&family=Source+Sans+3:wght@700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+}
+/* Header */
+#header{
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container nav h2{
+    width:140px;
+    color:white;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin:10px 20px;
+}
+nav ul li a {
+    color:#fff;
+    text-decoration: none;
+    font-size:18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width:0;
+    height:3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.header-text{
+    margin-top:20%;
+    font-size:30px;
+    color:#fff;
+}
+.header-text h2{
+    margin-top: 20px;
+}
+.header-text h2 span{
+    color:#ff004f;
+}
+.header-text .cvbtn{
+    display: block;
+    width:fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:#fff;
+    transition: background 0.5s;
+    font-size: 15px;
+}
+.header-text .cvbtn:hover{
+    background: #ff004f;
+}
+/* End of Header */
+
+/* About */
+#about{
+    padding: 15px 0;
+    color:white;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    gap:2rem;
+    color:#080808;
+}
+.about-col-1{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    flex-basis: 40%;
+}
+
+.about-col-2{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    flex-basis: 40%;
+}
+.icon{
+    height: 2rem;
+}
+#about .container h1{
+    font-size: 40px;
+}
+.aboutme{
+    font-size:20px;
+}
+
+/* Skills */
+#skills .container h1{
+    font-size:40px;
+    color:white;
+    padding:20px;
+    margin-top: 3%;
+}
+.front-end-skills{
+    display: flex;
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    justify-content: space-evenly;
+}
+.back-end-skills{
+    display: flex;
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    justify-content: space-evenly;
+}
+.fontend-dev{
+    color:white;
+    padding: 1.5rem;
+}
+/* End of Skills */
+
+/* Projects */
+
+#project .container h1{
+    font-size:40px;
+    color:white;
+    padding:20px;
+    margin-top: 3%;
+}
+
+.project-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.project-detail{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+.project-img{
+    width: 250px;
+    height: 150px;
+    object-fit: contain;
+}
+#project .btn{
+    font-weight: bold;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2 rem;
+    border: rgb(53,53,53) 0.1rem solid ;
+    color:white;
+    background-color: #080808;
+    cursor: pointer;
+}
+#project .btn:hover{
+    color:black;
+    background-color: white;
+}
+.dice{
+    border: rgb(53, 53 53) 0.1rem solid;
+    border-color:rgb(163, 163/ 163)
+}
+/* End of Projects */
+
+/* Contact */
+
+.contact-left p{
+    color:white;
+    margin-top: 30px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p i{
+    color:#ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social{
+    margin-top: 30px;
+}
+.social a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social a:hover{
+    color:#ff004f;
+    transform: translateY(-5px);
+}
+.submitbtn{
+    width:fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    font-size: 15px;
+    background: #ff004f;
+    color:#fff;
+    cursor: pointer;
+}
+.contact-right form{
+    width:100%;
+}
+form input, form textarea{
+    width:100%;
+    border: 0;
+    outline:none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color:#fff;
+    font-size:15px;
+    border-radius: 6px;
+}
+#msg{
+    color:#61b752;
+    display: block;
+}
+/* End of Contact */
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    nav .fas{
+        display: block;
+        color:#fff;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right:-200px;
+        width:200px;
+        height:100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top:25px;
+        left:25px;
+        cursor: pointer;
+
+    }
+    
+}
+
+@media only screen and (max-width: 300px){
+    .front-end-skills, .back-end-skills{
+        display: grid;
+    }
+    .contact-left p i{
+        font-size: 10px;
+    }
+    .contact-left p {
+        font-size: 10px;
+    }
+    .container{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .header-text{
+        font-size: 20px;
+    }
+    .project-img{
+        width: 200px;
+        height: 150px;
+        object-fit: contain;
+    }
+    .dice h2{
+        font-size: 18px;
+    }
+}
